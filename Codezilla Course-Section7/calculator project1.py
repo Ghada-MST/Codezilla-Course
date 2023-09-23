@@ -1,0 +1,5 @@
+first_num = input('Enter first number: ')
+second_num = input('Enter second number: ')
+result = float(first_num) + float(second_num)
+print("-"*30)
+print("The result is " + str(result))
