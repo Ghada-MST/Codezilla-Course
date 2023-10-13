@@ -435,7 +435,7 @@ while True:
           #get the quantity of each item in main items dictionary
           item_available_quantity = available_items[item_to_remove]['quantity']
           #get the item to remove quantity
-          item_to_remove_quantity = cart.get(item_to_remove).get('quantity')
+          item_to_remove_quantity = cart[item_to_remove]['quantity']
           #add the quantity to the main available quantity again
           item_available_quantity+=item_to_remove_quantity
           #add the quantity again to the main items dictionary
@@ -478,7 +478,7 @@ while True:
         #get the quantity of the item to remove
         item_available_quantity = available_items[item_to_remove]['quantity']
         #get the item to remove quantity
-        item_to_remove_quantity = cart.get(item_to_remove).get('quantity')
+        item_to_remove_quantity = cart[item_to_remove]['quantity']
         #add the quantity to the main available quantity again
         item_available_quantity+=item_to_remove_quantity
         #add the quantity again to the main items dictionary
